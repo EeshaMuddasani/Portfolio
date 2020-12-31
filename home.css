@@ -12,7 +12,7 @@ body {
     color: #EF8354;
   }
   .button {
-    background-color: #2D2D34;;
+    background-color: #2D2D34;
     height: 100%;
     border: none;
     color: #F6F1D1;
@@ -42,9 +42,7 @@ body {
 .page-footer {
     background-color: #222227;
     color: #ccc;
-    position: fixed;
-    bottom: 0;
-    right: 0;
+    position: relative;
     width: 100%;
   }
   .footer-copyright {
@@ -61,3 +59,59 @@ body {
       text-align: center;
     }
   }
+
+  .img-fluid {
+    height: 100vh;
+    overflow: hidden;
+    object-fit: cover;
+  }
+
+  img{
+    opacity: .3;
+  }
+  img:hover{
+    opacity: 1;
+  }
+
+  .text{
+    font-size: 50px;
+    position: absolute;
+    float: center;
+    padding-left: 300px;
+    padding-right: 200px;
+    padding-top: 50px;
+    text-align: center;
+    color: #F6F1D1;
+    transform: translate(-25%, -25%);
+  }
+  
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    flex: 25%;
+    max-width: 25%;
+    padding: 0;
+    color: white;
+  }
+  
+  .column img {
+    vertical-align: middle;
+  }
+
+@media (max-width: 1500px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
